@@ -1,1 +1,15 @@
-init
+module example-service {
+  namespace "http://example.com/service";
+  prefix svc;
+
+  container service {
+    leaf name {
+      type string;
+    }
+
+    leaf enabled {
+      type boolean;
+      default true;
+    }
+  }
+}
