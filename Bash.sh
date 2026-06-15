@@ -10,3 +10,18 @@ $ ./npmw build
 $ git commit -a -m 'whatever'
 $ git-cl upload
  ./npmw start
+
+# Download the latest release
+wget -O gerrit.war https://gerrit-releases.storage.googleapis.com/gerrit-3.14.0.war
+
+# Initialize a new Gerrit site
+java -jar gerrit.war init -d /path/to/gerrit/site_dir --dev --batch --install-all-plugins
+
+# Start Gerrit
+cd /path/to/gerrit/site_dir && bin/gerrit.sh start
+# Run with Docker
+docker run -d \
+  -p 8080:8080 \
+  -p 29418:29418 \
+  --name gerrit \
+  gerritcodereview/gerrit:latest
