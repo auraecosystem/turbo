@@ -25,3 +25,4 @@ docker run -d \
   -p 29418:29418 \
   --name gerrit \
   gerritcodereview/gerrit:latest
+$npm install ws
