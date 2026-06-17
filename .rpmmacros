@@ -1,0 +1,2 @@
+# Example: Adding -march=native for hardware optimization
+%optflags %{__global_compiler_flags} -m64 -march=native -mtune=native
