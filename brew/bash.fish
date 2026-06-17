@@ -1,3 +1,8 @@
+npm install -g wscat
+wscat -c wss://://qubuhub.com
+wscat -c wss://://qubuhub.com --show-ping-pong
+wscat -c wss://://qubuhub.com -H "Authorization: Bearer YOUR_TOKEN"
+wscat -c wss://://qubuhub.com -p echo-protocol
 scripts/upload-lobs.py
 git clone https://chromium.googlesource.com/website
 cd website
