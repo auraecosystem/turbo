@@ -1,0 +1,14 @@
+{
+  "name": "@auraecosystem/turbo.build",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check-types": "tsc --noEmit",
+    "db:up": "docker-compose up -d",
+    "db:push": "your-orm-tool schema-push",
+    "db:seed": "node ./db-seed.js"
+  }
+}
