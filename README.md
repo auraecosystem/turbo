@@ -32,3 +32,10 @@ bun install turbo --dev
     }
   }
 }
+```
+>_yarn
+```bash
+# Use an example listed below
+yarn dlx create-turbo@latest --example [turbo.build]
+# Use a GitHub repository from the community
+yarn dlx create-turbo@latest --example ["git clone" https://github.com/auraecosystem/turbo.build.git]
