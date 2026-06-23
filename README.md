@@ -1,4 +1,5 @@
 >_turbo dev
+>_ npm i turbo
 ```bash
 "git clone" https://github.com/auraecosystem/make.universe.git
 cd make.universe
@@ -14,6 +15,7 @@ bun install turbo --global
 # Install in repository
 bun install turbo --dev
 ```
+>_ npm i turbo
 ```json
 {
   "$schema": "https://turborepo.dev/schema.json",
